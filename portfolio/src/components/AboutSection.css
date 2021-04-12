@@ -1,0 +1,361 @@
+body {
+  overflow-x: hidden;
+}
+  
+  .hero-container {
+    margin: 0px auto;
+    max-width: 1100px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 90vh;
+  }
+  #root{
+      background-color:rgb(10, 25, 47);
+  }
+  .hero-container > h1 {
+    color: #fff;
+    font-size: 100px;
+    margin-top: -100px;
+  }
+  
+  .hero-container > p {
+    margin-top: 8px;
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+  }
+  #root > div.cards > div > div > h3 > a{
+    font-weight: 100;
+  }
+  
+  .hero-btns {
+    margin-top: 32px;
+  }
+  
+  .hero-btns .btn {
+    margin: 6px;
+  }
+  
+  .fa-play-circle {
+    margin-left: 4px;
+  }
+  
+  @media screen and (max-width: 960px) {
+    .hero-container > h1 {
+      font-size: 70px;
+      margin-top: -150px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .hero-container > h1 {
+      font-size: 50px;
+      margin-top: -100px;
+    }
+  
+    .hero-container > p {
+      font-size: 30px;
+    }
+  
+    .btn-mobile {
+      display: block;
+      text-decoration: none;
+    }
+  
+    .btn {
+      width: 100%;
+    }
+  }
+  #root > div > h1{
+    color: rgb(100, 255, 218);
+    margin: 0px 0px 20px 3px;
+    font-size: 16px;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+    font-weight: normal;
+  }
+  #root > div > h2{
+    transition-delay: 200ms;
+    font-size: 80px;
+    line-height: 1.1;
+    margin: 0px;
+    color: rgb(204, 214, 246);
+    font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+  }
+  #root > div > h3.front{
+    transition-delay: 300ms;
+    font-size: 80px;
+    line-height: 1.1;
+    font-weight: 600;
+    margin: 0px 0px 10px;
+    font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+    color: rgb(136, 146, 176);
+  }
+  #root > div > div > div > p{
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    background-color: rgb(10, 25, 47);
+    color: rgb(136, 146, 176);
+    line-height: 1.3;
+    font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+    font-size: 20px;
+  }
+  #root > div > div > div.describe{
+      max-width: 500px;
+  }
+
+
+  #root > div > div > div.btnn > a{
+    color: rgb(100, 255, 218);
+    background-color: transparent;
+    border: 1px solid rgb(100, 255, 218);
+    border-radius: 3px;
+    padding: 1.25rem 1.75rem;
+    font-size: 14px;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    margin-top: 50px;
+
+  }
+  #root > div > div > div.describe{
+
+    margin-bottom: 75px;
+  }
+
+  #root > div > div > div.btnn > a:hover{
+    background-color: rgb(100 255 218 / 25%);
+  }
+
+  #root > div.hero-container{
+    padding-top: 80px;
+  }
+
+  #root > div.hero-container > div.social-left{
+    width: 40px;
+    position: fixed;
+    bottom: 0px;
+    left: 40px;
+    right: auto;
+    z-index: 10;
+    color: rgb(168, 178, 209);
+  }
+
+  #root > div.hero-container > div.social-left > ul::after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+    background-color: rgb(168, 178, 209);
+  }
+
+  #root > div.hero-container > div.social-left > ul{
+    list-style:none;
+  }
+
+#root > div.hero-container > div.social-left > ul > li > a{
+padding: 15px;
+display: inline-block;
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
+    color: inherit;
+    position: relative;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    cursor: pointer;
+}
+#root > div.hero-container > div.social-left > ul{
+  display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+#root > div.hero-container > div.social-left > ul > li> a > i{
+  font-size:20px;
+}
+#root > div.hero-container > div.social-left > ul > li:nth-child(4) > a{
+  padding-bottom:40px;
+}
+#root > div.hero-container > div.social-left > ul > li > a > i:hover{
+ color:rgb(100, 255, 218);
+
+}
+
+#root > div.hero-container > div.social-left > ul > li > a:hover > i{
+ transform: translate(0px ,-5px);
+  color:rgb(100, 255, 218);
+  transition: all 0.25s;
+  }
+
+
+  #root > div.hero-container > div.socialRight{
+    width: 40px;
+    position: fixed;
+    bottom: 0px;
+    left: auto;
+    right: 40px;
+    z-index: 10;
+    color: rgb(168, 178, 209);
+  }
+  #root > div.hero-container > div.socialRight > div{
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+  }
+  #root > div.hero-container > div.socialRight > div > a{
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    margin: -10px auto;
+    display:flex;
+ 
+    padding: 10px;
+  }
+
+    #root > div.hero-container > div.socialRight > div > a::after{
+      content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+    background-color: rgb(168, 178, 209);
+    }
+ 
+ #root > div.hero-container > div.socialRight > div > a > p{
+       display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    font-family:monospace;
+ }
+ #root > div.hero-container > div.socialRight > div > a{
+   text-decoration:none;
+   color:rgb(168, 178, 209);
+ }
+
+
+ #root > div.hero-container > div.socialRight > div > a > p:hover{
+     transform: translate(0px ,-5px);
+  color:rgb(100, 255, 218);
+  transition: all 0.25s;
+ }
+
+ #root > div.hero-container > div.socialRight > div > a > p{
+   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+margin-right:0px;
+    padding: 10px;
+ }
+
+ /*resp*/
+ 
+   @media only screen and (max-width: 1200px){
+ #root > div.hero-container{
+   padding-left:100px;
+   padding-right:100px;
+ }}
+   @media only screen and (max-width: 770px){
+ #root > div.hero-container{
+   padding-left:50px;
+   padding-right:50px;
+ }}
+   @media only screen and (max-width: 480px){
+ #root > div.hero-container{
+   padding-left:20px;
+   padding-right:20px;
+ }}
+
+   @media only screen and (max-width: 1000px){
+#root > div.hero-container > h2{
+    font-size: 70px;
+ }}
+
+
+   @media only screen and (max-width: 1000px){
+ #root > div.hero-container > h3{
+       font-size: 70px;
+ }}
+
+  @media only screen and (max-width: 1000px){
+ #root > div.hero-container > h1{
+ font-size:14px;
+ }}
+
+  @media only screen and (max-width: 770px){
+    #root > div.hero-container > div.social-left{
+      display:none;
+    }
+  }
+   @media only screen and (max-width: 770px){
+    #root > div.hero-container > div.socialRight{
+      display:none;
+    }
+  }
+
+ @media only screen and (max-width: 770px){
+#root > div.hero-container > h3{
+font-size:60px;
+}}
+
+ @media only screen and (max-width: 770px){
+#root > div.hero-container > h2{
+font-size:60px;
+}}
+
+
+ @media only screen and (max-width: 520px){
+#root > div.hero-container > h3{
+font-size:50px;
+}}
+
+ @media only screen and (max-width: 520px){
+#root > div.hero-container > h2{
+font-size:50px;
+}}
+
+ @media only screen and (max-width: 450px){
+#root > div.hero-container > h3{
+font-size:40px;
+}}
+
+ @media only screen and (max-width: 450px){
+#root > div.hero-container > h2{
+font-size:40px;
+}}
+
+ @media only screen and (max-width: 380px){
+#root > div.hero-container > h3{
+font-size:30px;
+}}
+
+ @media only screen and (max-width: 380px){
+#root > div.hero-container > h2{
+font-size:30px;
+}}
+
+ @media only screen and (max-width: 520px){
+#root > div.hero-container > div.hero-btns > div > p{
+font-size:17px;
+margin-top:0px;
+}}
+
+@media only screen and (max-width: 380px){
+#root > div.hero-container > div.hero-btns > div > p{
+  font-size:15px;
+}}

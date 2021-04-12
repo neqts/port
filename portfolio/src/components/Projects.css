@@ -1,0 +1,157 @@
+#root > section.Projects > h4{
+font-weight: 600;
+    color: rgb(204, 214, 246);
+        margin: 0px auto;
+    font-size: 32px;
+}
+#root > section.Projects > a{
+display: inline-block;
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
+    position: relative;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    cursor: pointer;
+    color: rgb(100, 255, 218);
+    text-align: center;
+    margin: 0px auto;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+    font-size: 14px;
+    margin-top:10px
+}
+
+#root > section.Projects > a::after{
+       position: absolute;
+    content: "";
+    width: 95%;
+    height: 1px;
+    top: 100%;
+    left:5px;
+    background: rgb(100, 255, 218);
+    opacity: 0.5;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+    transform-origin: right;
+  
+}
+#root > section.Projects > a:hover::after{
+     transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+#root > section:nth-child(6) > div.flow{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+    position: inherit;
+}
+
+#root > section:nth-child(6) > div > div{
+    transition-delay: 0ms;
+    visibility: visible;
+    opacity: 1;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s, opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+
+}
+
+#root > section:nth-child(6) > div > div > div{
+box-shadow: rgb(2 12 27 / 70%) 0px 10px 30px -15px;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    padding: 2rem 1.75rem;
+    height: 100%;
+    border-radius: 3px;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    background-color: rgb(23, 42, 69);
+}
+
+#root > section:nth-child(6) > div > div > div > header > div{
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#root > section:nth-child(6) > div > div > div > header > div > div:nth-child(1){
+        color: rgb(100, 255, 218);
+        font-size:40px
+}
+#root > section:nth-child(6) > div > div > div > header > div > div > a{
+ position: relative;
+    top: -10px;
+    padding: 10px;
+    color: rgb(168, 178, 209);
+}
+
+#root > section:nth-child(6) > div > div > div > header > h5{
+    margin: 0px 0px 10px;
+    font-size: 19px;
+    color: rgb(204, 214, 246);
+    font-weight: 600;
+}
+
+
+#root > section:nth-child(6) > div{
+    position:inherit
+}
+#root > section:nth-child(6) > div > div > div > footer > ul{
+    display: flex;
+    align-items: flex-end;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin: 20px 0px 0px;
+    list-style: none;
+}
+#root > section:nth-child(6) > div > div > div > footer > ul > li{
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+    font-size: 12px;
+    color: rgb(136, 146, 176);
+    line-height: 1.75;
+    margin-right: 15px;
+}
+#root > section:nth-child(6) > div > div > div > header > div:nth-child(3) > p{
+    font-size:15px;
+}
+#root > section:nth-child(6) > div > div > div > header > div:nth-child(1) > div:nth-child(2) > a:nth-child(2) > i{
+    margin-left:-4px;
+}
+#root > section:nth-child(6) > div > div > div > header > div:nth-child(1) > div:nth-child(2) > a > i:hover{
+   color: rgb(100, 255, 218);
+}
+
+
+#root > section:nth-child(6) > div > div > div:hover{
+transform: translate(0px ,-10px);
+transition: all 0.25s;
+}
+
+#root > section:nth-child(6) > div{
+    margin-top:50px
+}
+
+
+
+@media only screen and (max-width: 1300px){
+#root > section:nth-child(6){
+         margin-left:20px;
+           margin-right:20px;
+}}
+
+#root > section:nth-child(6) > div > div > div > header{
+    width:100%;
+}
+
+@media only screen and (max-width: 330px){
+#root > section:nth-child(6) > div > div{
+    margin-right:20px
+}}

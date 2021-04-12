@@ -1,0 +1,404 @@
+#root > section.Projects{
+margin: 0px auto;
+    padding: 150px 0px;
+    max-width: 1100px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#root > section.Projects > h3 > a{
+        font-family: monospace;
+    font-weight: normal;
+    color: rgb(100, 255, 218);
+    margin-top: 10px;
+    font-size: 25px;
+    position: relative;
+    bottom: 4px;
+}
+#root > section.Projects > h3{
+     position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 10px 0px 40px;
+    width: 100%;
+    
+    white-space: nowrap;
+    font-size: 32px;
+    font-weight: 700;
+    color: rgb(204, 214, 246);
+}
+#root > section.Projects > h3 > span{
+     content: "";
+    display: block;
+    height: 1px;
+    width: 300px;
+    background-color: rgb(45, 57, 82);
+    position: relative;
+    top: 5px;
+    margin-left: 20px;
+}
+#root > section.Projects > div{
+display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(12, 1fr);
+    -webkit-box-align: center;
+    align-items: center;
+    margin-bottom: 100px;
+    position: relative;
+    grid-area: 1 / 1 / -1 / 7;
+    width:100%;
+}
+#root > section > div > div.first{
+grid-column: 7 / -1;
+    text-align: right;
+
+}
+#root > section > div > div > h5 > a{
+    font-size: 28px;
+    margin: 0px 0px 20px;
+    color: rgb(204, 214, 246);
+}
+#root > section > div> div > h5 > a:hover{
+    color: rgb(100, 255, 218);
+}
+#root > section > div:nth-child(2) > div > a > h5 > a{
+      font-size: 28px;
+    margin: 0px 0px 20px;
+    color: rgb(204, 214, 246);
+}
+#root > section > div:nth-child(2) > div > a > h5 > a:hover{
+    color: rgb(100, 255, 218);
+}
+
+
+#root > section > div> div > a{
+    text-decoration:none;
+}
+
+#root > section > div > div > div > p{
+    font-size:16px;
+}
+
+#root > section > div > div > div.desc{
+box-shadow: rgb(2 12 27 / 70%) 0px 10px 30px -15px;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    position: relative;
+    z-index: 2;
+    padding: 25px;
+    background-color: rgb(23, 42, 69);
+    color: rgb(168, 178, 209);
+    font-size: 18px;
+    border-radius: 3px;
+}
+#root > section > div > div > h4{
+        font-size: 13px;
+    font-weight: normal;
+    color: rgb(100, 255, 218);
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+    margin-top: 10px;
+    padding-top: 0px;
+}
+#root > section > div > div > ul{
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin: 25px 0px 10px;
+    list-style: none;
+}
+#root > section > div > div > ul > li{
+margin-left: 20px;
+    margin-right: 0px;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+    font-size: 13px;
+    color: rgb(136, 146, 176);
+    margin-right: 20px;
+    margin-bottom: 7px;
+    white-space: nowrap;
+}
+
+#root > section > div > div > div.git{
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    margin-left: 0px;
+    margin-right: -10px;
+    display: flex;
+    font-size:25px;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    margin-top: 10px;
+    margin-left: -10px;
+    color: rgb(204, 214, 246);
+}
+#root > section > div > div > div.git > a:nth-child(1){
+    padding:15px;
+}
+#root > section > div > div > div.git > a{
+    color:white;
+}
+#root > section > div > div > div.git > a:hover{
+    color:rgb(100, 255, 218);
+}
+#root > section > div > div > div.git > a:nth-child(2){
+    margin-right:15px;
+}
+#root > section > div > a{
+    grid-column: 1 / 8;
+    box-shadow: rgb(2 12 27 / 70%) 0px 10px 30px -15px;
+    grid-area: 1 / 6 / -1 / -1;
+    position: relative;
+    z-index: 1;
+  background-color: rgb(100, 255, 218);;
+    background-position:center;
+    background-size:cover;
+    background-size:130%;
+    background-repeat:no-repeat;
+    border-radius: 4px;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+   
+
+
+#root > section > div > a::before{
+    content: "";
+
+    width: 100%;
+    height: 100%;
+    inset: 0px;
+    z-index: 3;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+   background-color: rgb(0 255 194 / 82%);
+    mix-blend-mode: screen;
+}
+
+#root > section > div > a > div{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+
+    max-width: 100%;
+    vertical-align: middle;
+    border-radius: 3px;
+    position: relative;
+    mix-blend-mode: multiply;
+
+}
+
+#root > section > div > a > div > div{
+    width: 100%;
+    padding-bottom: 62.3402%;
+}
+
+
+
+#root > section > div > a  > div> a > img:hover{
+    
+   transition: all 0.25s ;
+     
+}
+#root > section > div > a > div > div{
+    background-color:#5ee2cb;
+}
+
+
+
+
+#root > section > div > a > div > a > img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+
+
+}
+#root > section > div > a{
+    grid-column: 1 / 8;
+}
+#root > section > div > div.first{
+    position:absolute
+}
+
+#root > section > div.validator{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(12, 1fr);
+    -webkit-box-align: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+#root > section > div.validator > div.rest{
+    position: relative;
+    grid-area: 1 / 1 / -1 / 7;
+}
+#root > section > div.validator > div > div.desc{
+    box-shadow: rgb(2 12 27 / 70%) 0px 10px 30px -15px;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    position: relative;
+    z-index: 2;
+    padding: 25px;
+    background-color: rgb(23, 42, 69);
+    color: rgb(168, 178, 209);
+    font-size: 18px;
+    border-radius: 3px;
+}
+#root > section > div.validator > div > ul.match{
+    justify-content:flex-start;
+}
+#root > section > div.validator > div > ul > li:nth-child(1){
+    margin-left:0px;
+}
+#root > section > div:nth-child(2) > div > ul > li:nth-child(4){
+    margin-right:0px;
+}
+#root > section > div.validator > div > div.git2{
+        -webkit-box-pack: end;
+    justify-content: flex-start;
+    margin-left: 0px;
+    margin-right: -10px;
+    display: flex;
+    font-size:25px;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    margin-top: 10px;
+    margin-left: -10px;
+    color: rgb(204, 214, 246);
+}
+#root > section > div > div > div.git2 > a:nth-child(1){
+    padding:15px;
+}
+#root > section > div > div > div.git2 > a{
+    color:white;
+}
+#root > section > div > div > div.git2 > a:hover{
+    color:rgb(100, 255, 218);
+}
+#root > section > div > div > div.git2 > a:nth-child(2){
+    margin-right:15px;
+}
+#root > section > div.validator > a.yolo{
+    grid-area: 1 / 6 / -1 / -1;
+}
+#root > section > div > div > h5 > a{
+    text-decoration:none;
+}
+
+#root > section:nth-child(5) > div:nth-child(2) > a:hover{
+    background-color:none;
+}
+#root > section > div > a:hover::before{
+    background-color:none;
+}
+#root > section:nth-child(5) > div> a:hover {
+    background:none;
+}
+
+#root > section:nth-child(6) > div > div > div > header > div:nth-child(3){
+    font-size: 17px;
+    color: rgb(168, 178, 209);
+}
+#root > section:nth-child(6) > div > div > div > header > div:nth-child(3) > p{
+        margin: 0px 0px 15px;
+}
+
+/*responsive*/
+
+
+#root > section:nth-child(5){
+    padding-left:150px;
+    padding-right:150px;
+}
+
+@media only screen and (max-width: 1000px){
+#root > section:nth-child(5){
+    padding-left:100px;
+    padding-right:100px;
+}}
+
+@media only screen and (max-width: 770px){
+#root > section:nth-child(5){
+    padding-left:50px;
+    padding-right:50px;
+}}
+
+
+@media only screen and (max-width: 770px){
+#root > section:nth-child(5) > div> a > div{
+    height:550px;
+}
+
+}
+@media only screen and (max-width: 770px){
+#root > section:nth-child(5) > div> a:nth-child(3) > div{
+    height:520px;
+}
+}
+
+
+@media only screen and (max-width: 770px){
+#root > section:nth-child(5) > div > div{
+    grid-column: 1 / -1; 
+    padding: 40px 40px 30px;
+}}
+
+@media only screen and (max-width: 770px){
+#root > section:nth-child(5) > div> a{
+    width:170%;
+
+}}
+@media only screen and (max-width: 770px){
+#root > section:nth-child(5) > div > div{
+    z-index:5;
+    padding: 152px 40px 30px;
+}}
+@media only screen and (max-width: 770px){
+#root > section:nth-child(5) > div > a{
+background-color: rgb(62 62 62);
+}}
+
+@media only screen and (max-width: 770px){
+  #root > section:nth-child(5) > div.validator{
+display:block;
+
+    }}
+
+@media only screen and (max-width: 770px){
+    #root > section:nth-child(5) > div.validator > div{
+        position:absolute
+    }}
+
+    @media only screen and (max-width: 480px){
+        #root > section:nth-child(5){
+            padding-left:20px;
+              padding-right:20px;
+        }
+    }
+
+    @media only screen and (max-width: 770px){
+    #root > section:nth-child(5) > h3{
+font-size:27px;
+    }}
+       @media only screen and (max-width: 330px){
+    #root > section:nth-child(5) > h3{
+font-size:22px;
+    }}
+
+  
+
+      @media only screen and (max-width: 500px){
+    #root > section:nth-child(5) > div > a{
+        width:174%
+    }}

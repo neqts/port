@@ -1,0 +1,291 @@
+#root > div.work{
+    margin: 0px;
+    padding: 0 150px;
+    background-color:rgb(10, 25, 47) ;
+}
+body{
+    background-color:rgb(10, 25, 47);
+}
+
+#root > div.work > h3{
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 10px 0px 40px;
+    width: 100%;
+    white-space: nowrap;
+    font-size: 32px;
+}
+.work{
+    background: rgb(10, 25, 47);
+    max-width: 700px;
+    margin: 0 auto;
+}
+#root > div.work > div{
+    padding-top: 150px 0;
+}
+#root > div.work{
+    margin:0 auto;
+}
+#root > div.work > div > h3 > a{
+    font-family: monospace;
+    font-weight: normal;
+    color: rgb(100, 255, 218);
+    margin-top: 10px;
+    font-size: 25px;
+    position: relative;
+    bottom: 4px;
+}
+#root > div.work > div > h3{
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 10px 0px 40px;
+    width: 100%;
+    
+    white-space: nowrap;
+    font-size: 32px;
+    font-weight: 700;
+    color: rgb(204, 214, 246);
+    
+}
+#root > div.work > div > h3 > span{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 300px;
+    background-color: rgb(45, 57, 82);
+    position: relative;
+    top: 5px;
+    margin-left: 20px;
+}
+
+#root > div.work > div.stack{
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+}
+#root > div.work > div.stack > ul > li{
+    transition: 0.3s;
+
+    color:black
+}
+
+#root > div.work > div.stack > ul > li::before{
+    content:"";
+    position: absolute;
+    /* bottom: -7px; */
+    left:0;
+    width: 2px;
+    height:15%;
+    background-color:rgb(100, 255, 218);
+    
+    outline: 0px;
+    border-radius: 3px;
+    opacity: 0;
+    transition: 0.3s;
+
+}
+
+#root > div.work > div.stack > ul{
+    border-left: 2px solid rgb(51, 63, 88);
+}
+
+
+
+#root > div.work > div.stack > ul > li:not(.active):hover::before{
+    opacity: 1;
+    /* bottom: 0; */
+}
+.nav-indicator{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    transition: 0.4s;
+    height: 5px;
+    z-index: 1;
+    border-radius: 3px;
+
+}
+
+#root > div.work > div.stack > ul{
+    list-style: none;
+}
+#root > div.work > div.stack > ul > li > button{
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    border:none;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    background-color: transparent;
+    height: 42px;
+    padding: 0px 20px 2px;
+    outline: none;
+    text-align: left;
+    white-space: nowrap;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+    font-size: 13px;
+    color: rgb(96, 106, 134);
+    
+}
+#root > div.work > div.stack > ul > li{
+    margin-left: -40px;
+}
+#root > div.work > div.stack > ul > li > button:hover{
+    background-color:#00000030;
+    color: rgb(100, 255, 218);
+    outline: none;
+}
+
+#root > div.work > div.stack > div{
+    position: relative;
+    width: 100%;
+    height: auto;
+  
+}
+#root > div.work > div.stack > div > p.date{
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+    font-size: 13px;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+    color: rgb(168, 178, 209);
+    margin-bottom: 30px;
+}
+#root > div.work > div.stack > div > div{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+#root > div.work > div.stack > div > div > p{
+    color: rgb(204, 214, 246);
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 5px;
+
+}
+
+#root > div.work > div.stack > div > div > a{
+    display: inline-block;
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
+    position: relative;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    cursor: pointer;
+    color: rgb(100, 255, 218);
+    font-size: 23px;
+    margin-top: 15px;
+  
+}
+#root > div.work > div.stack > div > div > a::after{
+    position: absolute;
+    content: "";
+    width: 95%;
+    height: 1px;
+    top: 100%;
+    left:5px;
+    background: rgb(100, 255, 218);
+    opacity: 0.5;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+#root > div.work > div.stack > div > div > a:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+#root > div.work > div.stack > div > ul > li::before{
+content: "▹";
+    position: absolute;
+    left: 0px;
+    color: rgb(100, 255, 218);
+   margin-left:-17px;
+
+}
+
+#root > div.work > div.stack > div > ul{
+    list-style:none;
+    color: rgb(136, 146, 176);
+    line-height: 1.3;
+    font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+}
+
+#root > div.work > div.stack > div{
+    margin-left:30px
+}
+#root > div.work > div.stack > div > ul{
+    padding:inherit;
+}
+
+/*responsie*/
+  @media only screen and (max-width: 920px){
+#root > div.work{
+padding-left:20px;
+padding-right:20px;
+}}
+
+ 
+  @media only screen and (max-width: 920px){
+ #root > div.work > div.stack{
+     display:block;
+ }}
+ @media only screen and (max-width: 920px){
+ #root > div.work > div.stack > ul > li{
+margin:0px;
+ }}
+@media only screen and (max-width: 920px){
+ #root > div.work > div.stack > ul > li > button{
+     width:80%
+ }}
+
+@media only screen and (max-width: 500px){
+ #root > div.work > div.stack > div > div > p{
+
+font-size:16px;
+
+
+
+ }}
+@media only screen and (max-width: 390px){
+#root > div.work > div.stack > div > div > p{
+
+font-size:12px;
+
+
+
+ }}
+
+
+@media only screen and (max-width: 390px){
+#root > div.work > div.stack > div > div > a{
+    font-size:12px;
+    margin-top:5px;
+}
+}
+
+
+@media only screen and (max-width: 500px){
+#root > div.work > div.stack > div > div > a{
+    font-size:16px;
+    margin-top:7px;
+}
+}
+
+@media only screen and (max-width: 400px){
+#root > div.work > div.stack > div{
+margin-left:0px;
+ }
+
+
+}
+
+#root > div.work{
+    padding-bottom:310px;
+}

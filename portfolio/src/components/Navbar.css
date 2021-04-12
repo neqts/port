@@ -1,0 +1,313 @@
+.navbar {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    padding: 0px 50px;
+    background-color: rgb(10, 25, 47);
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    z-index: 11;
+  
+    height: 80px;
+    box-shadow: none;
+    transform: translateY(0px);
+    filter: none !important;
+    pointer-events: auto !important;
+    user-select: auto !important;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    max-width: 1700px;
+  }
+  
+  .navbar-logo {
+    color: #fff;
+    justify-self: start;
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .fa-typo3 {
+    margin-left: 0.5rem;
+    font-size: 1.8rem;
+  }
+  
+  .nav-menu {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 100%;
+    justify-content: end;
+    margin-right: 2rem;
+  }
+  #root > nav > div{
+      width: 100%;
+  }
+  
+  #root > nav > div > ul{
+      padding: 0px;
+  }
+  #root > nav > div > ul > li > a{
+    margin-left: -40px;
+  }
+ 
+  .nav-item {
+    height: 80px;
+  }
+  
+  .nav-links {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0px 1rem;
+    height: 100%;
+  }
+  
+  .nav-links:hover {
+    border-bottom: 4px solid #fff;
+    transition: all 0.2s ease-out;
+  }
+  
+  .fa-bars {
+    color: #fff;
+  }
+  
+  .nav-links-mobile {
+    display: none;
+  }
+  
+  .menu-icon {
+    display: none;
+  }
+
+  #root > nav > div > ul > li{
+
+  position: relative;
+  font-size: 13px;
+  counter-increment: item 1;
+  }
+  #root > nav > div > ul > li > a > p{
+font-size: 13px;
+  }
+  #root > nav{
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 92%;
+    color: rgb(204, 214, 246);
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+    counter-reset: item 0;
+    z-index: 12;
+  }
+  @media only screen and (max-width: 960px){
+  #root > nav > div > ul > li:nth-child(1) > a{
+    display: inline-flex;
+    height: 30px;
+    justify-content: center;
+  }}
+  @media only screen and (max-width: 960px){
+  #root > nav > div > a{
+    display: none;
+  }}
+
+
+  #root > nav > div > ul > li > a > a{
+   
+    text-align: right;
+    color: rgb(100, 255, 218);
+    font-size: 13px;
+  }
+  
+  @media screen and (max-width: 960px) {
+    .NavbarItems {
+      position: relative;
+    }
+  
+    .nav-menu {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    
+      height: 93vh;
+      position: absolute;
+      top: 50px;
+      left: -100%;
+      opacity: 1;
+      transition: all 0.5s ease;
+    }
+    #root > nav{
+        position: fixed;
+    }
+  
+    .nav-menu.active {
+     background: rgb(10 25 47 / 91%);
+      left: 0;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: 1;
+    }
+  
+    .nav-links {
+      text-align: center;
+      padding: 2rem;
+      width: 100%;
+      display: table;
+    }
+  
+    .nav-links:hover {
+      background-color: #fff;
+      color: #242424;
+      border-radius: 0;
+    }
+  
+    .navbar-logo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(25%, 50%);
+    }
+  
+    .menu-icon {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 60px;
+      transform: translate(-100%, 60%);
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+  
+    .fa-times {
+      color: #fff;
+      font-size: 2rem;
+    }
+  
+    .nav-links-mobile {
+      display: block;
+      text-align: center;
+      margin: 2rem auto;
+      border-radius: 4px;
+      width: 80%;
+      text-decoration: none;
+      font-size: 1.5rem;
+      background-color: transparent;
+      color: #fff;
+      padding: 14px 20px;
+      border: 1px solid #fff;
+      transition: all 0.3s ease-out;
+    }
+  
+    .nav-links-mobile:hover {
+      background: #fff;
+      color: #242424;
+      transition: 250ms;
+    }
+  }
+ 
+  #root > nav > div > ul > li > a > a{
+      font-family: monospace;
+      font-size: 14px;
+  }
+  #root > nav > div > a{
+    color: rgb(100, 255, 218);
+    background-color: transparent;
+    border: 1px solid rgb(100, 255, 218);
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 14px;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  }
+  #root > nav > div > a:hover{
+    background-color: rgb(100 255 218 / 25%);
+  }
+  #root > div.cards > div > div > div > div.Two > a.photo{
+    box-shadow: rgb(2 12 27 / 70%) 0px 10px 30px -15px;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    width: 100%;
+    position: relative;
+    border-radius: 3px;
+    background-color: black;
+    margin-left: -20px;
+    display: inline-block;
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
+    color: inherit;
+    position: relative;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    cursor: pointer;
+  }
+  #root > div.cards > div > div > div > div.Two > a::before{
+    inset: 0px;
+    background-color: rgb(10, 25, 47);
+    mix-blend-mode: screen;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    background: rgb(0 255 194 / 82%);
+
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  }
+
+  #root > div.cards > div > div > div > div.Two > a > div > img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    opacity: 0;
+    transition-delay: 500ms;
+  }
+  #root > nav > div > ul > li{
+    font-family:monospace;
+    font-size:15px;
+  }
+  #root > nav > div > ul > li:nth-child(1) > a > p{
+       font-family:monospace;
+    font-size:15px;
+  }
+  #root > nav > div > ul > li{
+  padding-left:70px
+  }
+  #root > nav > div > ul > li{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    transition: all 0.25s;
+    cursor:pointer;
+  }
+
+#root > nav > div > ul > li > a:hover{
+  color:rgb(100, 255, 218);
+}
+#root > nav > div > ul > li > a{
+  font-family:monospace;
+}
+#root > nav > div > ul > li:nth-child(1) > a{
+   font-family:monospace;
+}
